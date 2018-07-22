@@ -1,0 +1,223 @@
+@import 'paleta.css';
+
+body {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/bg.jpg) fixed center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-carousel {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), fixed center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar .navbar-header,
+.navbar-collapse {
+    float:none;
+    display:inline-block;
+    vertical-align: top;
+}
+
+@media (min-width: 992px) {
+  .nav1 {
+    height: 60px;
+    text-transform: uppercase;
+  }
+
+  .nav2 {
+    height: 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+a.nav-link {
+  color: #FFF !important;
+}
+
+a.nav-link:hover {
+  color: #000 !important;
+}
+
+.navbar-text {
+  color: #FFF !important;
+}
+
+.no-bg {
+    background: transparent;
+}
+
+.jumbotron {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.card-img-top {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.carousel-img {
+  height: 50rem;
+  object-fit: cover;
+}
+
+.rounded-circle {
+    max-width: 250px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-caption {
+}
+
+/* homes start */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* homes end */
+
+/* showcase */
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background: #FFF url(../images/elder12.jpg) center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.showcase a {
+  display: inline-block;
+}
+
+.cijena {
+  font-size: 32px;
+}
+
+.mapouter {
+  height:500px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  height:500px;
+}
+
+.krug {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  line-height: 180px;
+  text-align: center;
+}
+
+.krug-plavi {
+  border: 5px solid DodgerBlue;
+  color: DodgerBlue;
+}
+
+.krug-zuti {
+  border: 5px solid #ffc107;
+  color: #ffc107;
+}
+
+.krug-crveni {
+  border: 5px solid #ce5050;
+  color: #ce5050;
+}
+
+.krug-zeleni {
+  border: 5px solid #28a745;
+  color: #28a745;
+}
+
+.sponzor {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.sponzor:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
